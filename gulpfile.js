@@ -170,6 +170,7 @@ function netlifyOpen(done) {
     done();
 }
 
+
 // Deploy command
 exports.deploy = series(git, netlify, netlifyOpen);
 
